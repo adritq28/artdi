@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDRIERIA & MARQUETERIA SAN FRANCISCO</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Poiret+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Marck+Script&family=Poiret+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Marck+Script&family=Poiret+One&family=Square+Peg&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marck+Script&family=Poiret+One&family=Square+Peg&display=swap"
+        rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #0b5345;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        margin: 10px 0; /* Espaciado vertical */
+        transition: all 0.3s ease-in-out; /* Transición suave */
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            background-image: url('images/fondo.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 2rem 0;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(83, 80, 80, 0.5);
+        }
+
+        .content .container {
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+
+        .footer {
+            background-color: rgba(0, 123, 255, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ffcc00;
+        }
+
+        h1.display-4 {
+            font-family: "Poiret One", serif;
+            font-size: 4rem;
+        }
+
+        .lead {
+            font-family: "Mali", serif;
+            font-size: 1rem;
+        }
+
+        /* Estilos base para los botones */
+        .btn-custom {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            border: 2px solid var(--color);
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+            font-family: "Macondo Swash Caps", serif;
+            color: white;
+            background-color: var(--color);
+            margin: 0.5em;
+        }
+
+        /* Efecto fill */
+        .fill:hover,
+        .fill:focus {
+            background-color: var(--hover);
+            box-shadow: inset 0 0 0 2em var(--hover);
+            color: white;
+        }
+
+        /* Efecto pulse */
+        .pulse:hover,
+        .pulse:focus {
+            background-color: var(--hover);
+            animation: pulse 1s;
+            box-shadow: 0 0 0 2em transparent;
+            color: white;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 var(--hover);
+            }
+        }
+
+        /* Efecto close */
+        .close:hover,
+        .close:focus {
+            background-color: var(--hover);
+            box-shadow:
+                inset -3.5em 0 0 0 var(--hover),
+                inset 3.5em 0 0 0 var(--hover);
+            color: white;
+        }
+
+        /* Efecto raise */
+        .raise:hover,
+        .raise:focus {
+            background-color: var(--hover);
+            box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+            transform: translateY(-0.25em);
+            color: white;
+        }
+
+        /* Efecto up */
+        .up:hover,
+        .up:focus {
+            background-color: var(--hover);
+            box-shadow: inset 0 -3.25em 0 0 var(--hover);
+            color: white;
+        }
+
+        /* Efecto slide */
+        .slide:hover,
+        .slide:focus {
+            background-color: var(--hover);
+            box-shadow: inset 6.5em 0 0 0 var(--hover);
+            color: white;
+        }
+
+        /* Efecto offset */
+        .offset:hover,
+        .offset:focus {
+            background-color: var(--hover);
+            box-shadow:
+                0 0 0 0 var(--hover),
+                inset 6em 3.5em 0 0 var(--hover);
+            color: white;
+        }
+
+
+
+        @media (max-width: 767.98px) {
+            .logo {
+                max-width: 100px;
+            }
+
+            .header .col-6 {
+                width: 50%;
+            }
+
+            .header .col-md-8 {
+                order: 2;
+            }
+        }
+
+        
+
+    /* Efecto de sombra y escala al hacer hover */
+    .logo-effect:hover {
+        transform: scale(1.1); /* Escalar el logo al 110% */
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Sombra suave */
+    }
+
+    /* Estilos para pantallas pequeñas (menos de 768px) */
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Primer logo -->
+                <div class="col-md-2 col-6 text-center">
+                    <img src="images/logo2.png" alt="Logo 1" class="img-fluid logo logo-effect">
+                </div>
+                <!-- Título y descripción -->
+                <div class="col-md-8 col-12 text-center">
+                    <h1 class="display-4">VIDRIERIA & MARQUETERIA SAN FRANCISCO</h1>
+                    <p class="lead">En nuestra tienda de confianza, encontrarás una amplia variedad de espejos y
+                        cuadros, perfectos para realzar la decoración de cualquier espacio, ya sea en tu hogar, oficina
+                        o lugar de trabajo. Nos dedicamos a ofrecerte opciones que se adapten a tus gustos y
+                        necesidades, asegurando que cada rincón luzca único y acogedor.</p>
+                </div>
+                <!-- Segundo logo -->
+                <div class="col-md-2 col-6 text-center">
+                    <img src="images/logo1.png" alt="Logo 2" class="img-fluid logo logo-effect">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contenido principal con fondo -->
+    <div class="content">
+        <div class="container text-center">
+            <!-- Botones de catálogos -->
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="https://artdibo.my.canva.site/marqueteria-vidrieria-san-francisco"
+                        class="btn btn-custom pulse" style="--color: #7156ecce; --hover: #a972cbd0;">Catálogo de Espejos</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://artdibo.my.canva.site/cuadros-de-rompezabezas" class="btn btn-custom pulse"
+                        style="--color: #ec8556d9; --hover: #ef6eaed1;">Catálogo de Rompecabezas</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://artdibo.my.canva.site/" class="btn btn-custom pulse"
+                        style="--color: #49d3b3c7; --hover: #ff7f81d4;">Catálogo de Cuadros decorativos</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://artdibo.my.canva.site/cuadros-personalizados" class="btn btn-custom pulse"
+                        style="--color: #ec56a1c6; --hover: #ffa260df;">Catálogo de Cuadros Personalizados</a>
+                </div>
+            </div>
+
+            <!-- Redes sociales y WhatsApp -->
+            <div class="mt-5">
+                <h3>¡Síguenos en redes sociales!</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1BJUf5ZuaS/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/artdi_bo?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@artdi.bo" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.link/n7troh" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p class="mt-3">WhatsApp: <a  target="_blank">+591 67078314 - 71912226 - 73028644</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2023 VIDRIERIA & MARQUETERIA SAN FRANCISCO. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
