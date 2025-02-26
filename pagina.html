@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,22 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Poiret+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Marck+Script&family=Poiret+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Marck+Script&family=Poiret+One&family=Square+Peg&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marck+Script&family=Poiret+One&family=Square+Peg&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Marck+Script&family=Poiret+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Marck+Script&family=Poiret+One&family=Square+Peg&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marck+Script&family=Poiret+One&family=Square+Peg&display=swap"
+        rel="stylesheet">
     <!-- Estilos personalizados -->
     <style>
-        html, body {
+        html,
+        body {
             width: 100%;
-            overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+            overflow-x: hidden;
+            /* Oculta el desbordamiento horizontal */
         }
 
         body {
@@ -28,8 +37,10 @@
         /* Padding para móviles */
         @media (max-width: 767.98px) {
             .container {
-                padding-right: 15px; /* Padding al lado derecho en móviles */
-                padding-left: 15px; /* Padding al lado izquierdo en móviles */
+                padding-right: 15px;
+                /* Padding al lado derecho en móviles */
+                padding-left: 15px;
+                /* Padding al lado izquierdo en móviles */
             }
         }
 
@@ -43,7 +54,7 @@
         .logo {
             max-width: 150px;
             height: auto;
-            margin: 10px 0;
+            margin: 30px 0;
             transition: all 0.3s ease-in-out;
         }
 
@@ -84,7 +95,7 @@
         }
 
         .footer {
-            background-color: rgba(0, 123, 255, 0.9);
+            background-color: #0b5345;
             color: white;
             text-align: center;
             padding: 1rem 0;
@@ -102,15 +113,18 @@
         }
 
         h1.display-4 {
-    font-family: "Poiret One", serif;
-    font-size: clamp(2.5rem, 5vw, 3.5rem); /* Ajusta entre 2rem y 3.5rem */
-    max-width: 100%; /* Evita el desbordamiento */
-    text-align: center; /* Centra el texto */
-    white-space: normal; /* Permite saltos de línea */
-    word-wrap: break-word; /* Rompe palabras largas */
-}
-
-
+            font-family: "Poiret One", serif;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            /* Ajusta entre 2rem y 3.5rem */
+            max-width: 100%;
+            /* Evita el desbordamiento */
+            text-align: center;
+            /* Centra el texto */
+            white-space: normal;
+            /* Permite saltos de línea */
+            word-wrap: break-word;
+            /* Rompe palabras largas */
+        }
 
         .lead {
             font-family: "Mali", serif;
@@ -147,7 +161,9 @@
         }
 
         @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 var(--hover); }
+            0% {
+                box-shadow: 0 0 0 0 var(--hover);
+            }
         }
 
         .close:hover,
@@ -203,9 +219,157 @@
                 order: 2;
             }
         }
+
+        /* Estilos personalizados para el menú */
+        .navbar-custom {
+            background-color: rgba(11, 83, 69, 0.9);
+            /* Color de fondo con transparencia */
+            padding: 0.5rem 1rem;
+            /* Espaciado interno */
+        }
+
+        .navbar-custom .navbar-brand {
+            color: white;
+            /* Color del texto del brand */
+            font-family: "Poiret One", serif;
+            font-size: 1.5rem;
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+            color: white;
+            /* Color del texto de los enlaces */
+            font-family: "Mali", serif;
+            font-size: 1rem;
+            margin: 0 10px;
+            /* Espaciado entre enlaces */
+        }
+
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #ffcc00;
+            /* Color al pasar el mouse */
+        }
+
+        .navbar-custom .navbar-toggler {
+            border-color: white;
+            /* Color del borde del botón toggler */
+        }
+
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        /* Menú lateral en pantallas pequeñas */
+        @media (max-width: 767.98px) {
+            .navbar-custom {
+                position: fixed;
+                /* Menú fijo en pantallas pequeñas */
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+                /* Para que esté por encima de todo */
+            }
+
+            .navbar-collapse {
+                position: fixed;
+                top: 56px;
+                /* Altura del navbar */
+                left: -100%;
+                /* Oculta el menú fuera de la pantalla */
+                width: 80%;
+                /* Ancho del menú */
+                height: calc(100vh - 56px);
+                /* Altura del menú */
+                background-color: rgba(11, 83, 69, 0.95);
+                /* Fondo semi-transparente */
+                transition: left 0.3s ease-in-out;
+                overflow-y: auto;
+                /* Permite desplazamiento si el menú es muy largo */
+            }
+
+            .navbar-collapse.show {
+                left: 0;
+                /* Muestra el menú */
+            }
+
+            .navbar-nav {
+                padding: 1rem;
+            }
+
+            .navbar-nav .nav-item {
+                margin: 1rem 0;
+            }
+        }
+
+        .card {
+            background-color: rgba(62, 118, 89, 0.408);
+            /* Fondo con color semi-transparente */
+            border-radius: 15px;
+            /* Bordes redondeados */
+            box-shadow: 0 4px 6px rgba(111, 120, 78, 0.41);
+            /* Sombra suave */
+            padding: 20px;
+            /* Espaciado interno */
+            border: 1px solid rgba(189, 29, 29, 0.675);
+            /* Borde sutil */
+        }
+
+        .card-title {
+            font-family: "Poiret One", serif;
+            font-size: 2.5rem;
+            color: #ffffff;
+            /* Color del texto */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            /* Sombra en el texto */
+        }
+
+        .card-text {
+            color: #ffffff;
+            /* Color del texto */
+            line-height: 1.8;
+            /* Espaciado entre líneas */
+        }
+
+        .card-text strong {
+            color: #ffcc00;
+            /* Color para resaltar palabras clave */
+        }
     </style>
 </head>
+
 <body>
+    <!-- Menú de navegación responsivo -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienesomos">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#molduras">Molduras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#enmarcado">Enmarcado de Cuadros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#espejos">Espejos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="header">
         <div class="container">
             <div class="row align-items-center">
@@ -216,10 +380,14 @@
                 <!-- Título y descripción -->
                 <div class="col-md-8 col-12 text-center">
                     <h1 class="display-4">VIDRIERIA & MARQUETERIA SAN FRANCISCO</h1>
-                    <p class="lead">En nuestra tienda de confianza, encontrarás una amplia variedad de espejos y
-                        cuadros, perfectos para realzar la decoración de cualquier espacio, ya sea en tu hogar, oficina
-                        o lugar de trabajo. Nos dedicamos a ofrecerte opciones que se adapten a tus gustos y
-                        necesidades, asegurando que cada rincón luzca único y acogedor.</p>
+                    <p class="lead">En nuestra tienda de vidriería y marquetería, encontrarás espejos, enmarcados y
+                        cuadros perfectos para decorar
+                        cualquier espacio, ya sea tu hogar, oficina o lugar de trabajo. Ofrecemos un servicio
+                        profesional de enmarcado
+                        con una amplia variedad de molduras en distintos estilos y colores, además de espejos con marcos
+                        únicos.
+                        Nos enfocamos en brindarte opciones que combinen funcionalidad y diseño, para que cada rincón
+                        luzca especial y acogedor.</p>
                 </div>
                 <!-- Segundo logo -->
                 <div class="col-md-2 col-6 text-center">
@@ -235,7 +403,8 @@
             <div class="row">
                 <div class="col-md-3">
                     <a href="https://artdibo.my.canva.site/marqueteria-vidrieria-san-francisco"
-                        class="btn btn-custom pulse" style="--color: #7156ecce; --hover: #a972cbd0;">Catálogo de Espejos</a>
+                        class="btn btn-custom pulse" style="--color: #7156ecce; --hover: #a972cbd0;">Catálogo de
+                        Espejos</a>
                 </div>
                 <div class="col-md-3">
                     <a href="https://artdibo.my.canva.site/cuadros-de-rompezabezas" class="btn btn-custom pulse"
@@ -250,17 +419,60 @@
                         style="--color: #ec56a1c6; --hover: #ffa260df;">Catálogo de Cuadros Personalizados</a>
                 </div>
             </div>
+            <div class="card  border-0 mt-5" id="quienesomos">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Quiénes Somos</h2>
+                    <p class="card-text lead">
+                        En <strong>Vidriería & Marquetería San Francisco</strong>, llevamos más de 25 años siendo
+                        referentes en el sector, ofreciendo productos de alta calidad y un servicio personalizado que
+                        nos distingue. Nos especializamos en el <strong>enmarcado de cuadros</strong> y la creación de
+                        <strong>espejos únicos</strong>, diseñados para adaptarse a las tendencias actuales y a las
+                        necesidades específicas de cada cliente.
+                    </p>
+                    <p class="card-text lead">
+                        Contamos con una amplia variedad de <strong>molduras</strong> en diversos estilos, tamaños y
+                        colores, lo que nos permite crear piezas personalizadas que se ajustan a tu gusto y estilo. Cada
+                        proyecto es una oportunidad para nosotros de demostrar nuestra pasión por el arte y la
+                        decoración, asegurando que cada detalle refleje la esencia de quien lo elige.
+                    </p>
+                    <p class="card-text lead">
+                        En nuestro compromiso por ofrecer una experiencia excepcional, no solo te brindamos productos de
+                        calidad, sino también <strong>asesoría experta</strong>. Nuestro equipo está siempre dispuesto a
+                        guiarte en la elección de las mejores opciones para realzar tus espacios, ya sea en tu hogar,
+                        oficina o lugar de trabajo. Para nosotros, tu satisfacción es la base de nuestro éxito.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sección de Enmarcado de Cuadros -->
+            <section id="enmarcado" class="py-5">
+                <div class="container">
+                    <div class="card border-0"> <!-- Tarjeta con fondo transparente -->
+                        <div class="card-body">
+                            <h2 class="card-title text-center mb-4">Enmarcado de Cuadros</h2>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <img src="images/cuadros.jpg" alt="Enmarcado de Cuadros" class="img-fluid w-100"
+                                        style="max-width: 1120px; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- Redes sociales y WhatsApp -->
-            <div class="mt-5">
+            <div class="mt-5" id="contacto">
                 <h3>¡Síguenos en redes sociales!</h3>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/share/1BJUf5ZuaS/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/artdi_bo?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1BJUf5ZuaS/?mibextid=qi2Omg" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/artdi_bo?r=nametag" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
                     <a href="https://www.tiktok.com/@artdi.bo" target="_blank"><i class="fab fa-tiktok"></i></a>
                     <a href="https://wa.link/n7troh" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
-                <p class="mt-3">WhatsApp: <a  target="_blank">+591 67078314 - 71912226 - 73028644</a></p>
+                <p class="mt-3">WhatsApp: <a target="_blank">+591 67078314 - 71912226 - 73028644</a></p>
             </div>
         </div>
     </div>
@@ -273,5 +485,18 @@
     <!-- Bootstrap JS y dependencias -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Script para cerrar el menú al hacer clic fuera -->
+    <script>
+        document.addEventListener('click', function (event) {
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            if (!navbarCollapse.contains(event.target)) {
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarCollapse.classList.remove('show');
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>
